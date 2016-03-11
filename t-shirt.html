@@ -24,10 +24,11 @@
     .column{
       width: 30%;
       height: 100%;
-      margin-top: 25px;
+      margin-top: 30px;
       margin-left: 2.5%;
       float: left;
       position: relative;
+      min-width: 350px;
     }
 
     .column1{
@@ -37,6 +38,17 @@
     }
 
     .column3{
+    }
+
+    .flip{
+      border: 0;
+      border-left: solid #63A3DC 3px;
+      border-bottom: solid #63A3DC 3px;
+      position: absolute;
+      height: 35px;
+      width: 35px;
+      right: -2px;
+      top: -2px;
     }
 
     .image{
@@ -72,13 +84,20 @@
 
     .hoversizes{
       width: 25%;
-      height: 35%;
+      height: 250px;
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       left: 37.25%;
+      opacity: 0;
     }
 
     .hovercolors{
+      width: 25%;
+      height: 120px;
+      position: absolute;
+      bottom: 20%;
+      left: 57%;
+      opacity: 0;
 
     }
 
@@ -94,53 +113,124 @@
       transform: rotate(45deg);
     }
 
+    .hover1a:hover + .hoversizes{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 37.25%;
+      opacity: 1;
+    }
+
+    .hover1b:hover + .hovercolors{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 57%;
+      opacity: 1;
+    }
+
+    .hover2a:hover + .hoversizes{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 37.25%;
+      opacity: 1;
+    }
+
+    .hover2b:hover + .hovercolors{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 57%;
+      opacity: 1;
+    }
+
+    .hover3a:hover + .hoversizes{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 37.25%;
+      opacity: 1;
+    }
+
+    .hover3b:hover + .hovercolors{
+      transition: 0.5s;
+      bottom: 15%;
+      left: 57%;
+      opacity: 1;
+    }
+
 
   </style>
   <body>
     <div class="container">
 
       <div class="box column">
+
+        <div class="box flip"></div>
+
         <div class="box image"></div>
 
         <div class="buttonpanel">
           <div class="box button"></div>
           <div class="box button"></div>
-          <div class="box button"></div>
-          <div class="box button"></div>
+          <div class="box button hover1a"></div>
+          <div class="box hoversizes">
+            <!-- <div class="box arrow"></div> -->
+          </div>
+          <div class="box button hover1b"></div>
+          <div class="box hovercolors"></div>
           <div class="box button last"></div>
         </div>
-        <div class="box hoversizes">
-          <div class="box arrow"></div>
-        </div>
-        <div class="box hovercolors"></div>
+
+
+
+
 
 
 
       </div>
       <div class="box column">
+
+        <div class="box flip"></div>
+
         <div class="box image"></div>
 
         <div class="buttonpanel">
           <div class="box button"></div>
           <div class="box button"></div>
-          <div class="box button"></div>
-          <div class="box button"></div>
+          <div class="box button hover2a"></div>
+          <div class="box hoversizes">
+            <!-- <div class="box arrow"></div> -->
+          </div>
+          <div class="box button hover2b"></div>
+          <div class="box hovercolors"></div>
           <div class="box button last"></div>
         </div>
+
+
+
+
       </div>
 
 
 
       <div class="box column">
+
+        <div class="box flip"></div>
+
         <div class="box image"></div>
 
         <div class="buttonpanel">
           <div class="box button"></div>
           <div class="box button"></div>
-          <div class="box button"></div>
-          <div class="box button"></div>
+          <div class="box button hover3a"></div>
+          <div class="box hoversizes">
+            <!-- <div class="box arrow"></div> -->
+          </div>
+          <div class="box button hover3b"></div>
+          <div class="box hovercolors"></div>
           <div class="box button last"></div>
         </div>
+
+
+
+
       </div>
 
     </div>
