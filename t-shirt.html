@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>T-Shirt Sales</title>
   </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <style media="screen">
     * {
       margin: 0;
@@ -22,13 +23,13 @@
     }
 
     .column{
-      width: 30%;
+      width: 28.5%;
       height: 100%;
       margin-top: 30px;
-      margin-left: 2.5%;
+      margin-left: 4%;
       float: left;
       position: relative;
-      min-width: 350px;
+      min-width: 400px;
     }
 
     .column1{
@@ -51,6 +52,11 @@
       top: -2px;
     }
 
+    .flip:hover{
+      background-color: #63A3DC;
+      color: white;
+    }
+
     .image{
       border: 0;
       border-bottom: solid #63A3DC 3px;
@@ -69,7 +75,15 @@
       width: 20%;
       height: 100%;
       float: left;
+      color: #63A3DC;
+      font-size: 35px;
+      position: relative;
 
+    }
+
+    .button:hover{
+      background-color: #63A3DC;
+      color: white;
     }
 
     .button::after{
@@ -80,6 +94,33 @@
 
     .button.last{
       border: 0;
+    }
+
+    .buttonicon{
+      position: absolute;
+      top: 20px;
+      left: 23px;
+    }
+
+    ul{
+      margin-top: 23px;
+      color: #63A3DC;
+    }
+
+    li{
+      list-style: none;
+      text-align: center;
+      margin: 12px;
+    }
+
+    .colorchoice{
+      height: 35px;
+      width: 35px;
+      background-color: #63A3DC;
+      border: white solid 3px;
+      position: absolute;
+      top: 17px;
+      left: 19px;
     }
 
     .hoversizes{
@@ -167,15 +208,36 @@
         <div class="box image"></div>
 
         <div class="buttonpanel">
-          <div class="box button"></div>
-          <div class="box button"></div>
-          <div class="box button hover1a"></div>
+          <div class="box button">
+            <i class="fa fa-refresh buttonicon"></i>
+          </div>
+          <div class="box button">
+            <i class="fa fa-heart-o buttonicon"></i>
+          </div>
+          <div class="box button hover1a">
+            <i class="fa fa-cogs buttonicon"></i>
+          </div>
           <div class="box hoversizes">
+            <ul>
+              <li><i class="fa fa-user fa-4x"></i></li>
+              <li><i class="fa fa-user fa-3x"></i></li>
+              <li><i class="fa fa-user fa-2x"></i></li>
+              <li><i class="fa fa-user"></i></li>
+            </ul>
             <!-- <div class="box arrow"></div> -->
           </div>
-          <div class="box button hover1b"></div>
-          <div class="box hovercolors"></div>
-          <div class="box button last"></div>
+          <div class="box button hover1b">
+            <div class="colorchoice"></div>
+          </div>
+          <div class="box hovercolors">
+            <div class="colorchoice color1"></div>
+            <div class="colorchoice color2"></div>
+            <div class="colorchoice color3"></div>
+            <div class="colorchoice color4"></div>
+          </div>
+          <div class="box button last">
+            <i class="fa fa-shopping-cart buttonicon"></i>
+          </div>
         </div>
 
 
